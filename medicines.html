@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medicines - Pharmacy Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>LPU Pharmacy</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="medicines.html" class="current">Medicines</a>
+      <a href="sales.html">Sales &amp; Billing</a>
+      <a href="purchases.html">Purchase History</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <h1>Medicine Inventory</h1>
+        <p>Manage medicine list and stock levels</p>
+      </div>
+      <input type="text" class="search-box-input" placeholder="Search by category...">
+    </div>
+
+    <div class="panel">
+      <h2>All Medicines</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Medicine ID</th>
+            <th>Name</th>
+            <th>Rack</th>
+            <th class="num">Qty</th>
+            <th>Expiry</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1001</td>
+            <td>ORS Sachet</td>
+            <td>A1</td>
+            <td class="num">9</td>
+            <td>31 Mar 2028</td>
+            <td><span class="badge low">Low Stock</span></td>
+          </tr>
+          <tr>
+            <td>1002</td>
+            <td>Cough Syrup</td>
+            <td>B2</td>
+            <td class="num">3</td>
+            <td>31 Oct 2026</td>
+            <td><span class="badge expiring">Expiring Soon</span></td>
+          </tr>
+          <tr>
+            <td>1003</td>
+            <td>Paracetamol 500mg</td>
+            <td>C3</td>
+            <td class="num">24</td>
+            <td>31 Aug 2027</td>
+            <td><span class="badge ok">In Stock</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      Pharmacy Management System &copy; 2026 &bull; CSE First-Term Academic Project
+    </div>
+  </div>
+
+</body>
+</html>

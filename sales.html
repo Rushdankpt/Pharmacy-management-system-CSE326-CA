@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales & Billing - Pharmacy Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>LPU Pharmacy</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="medicines.html">Medicines</a>
+      <a href="sales.html" class="current">Sales &amp; Billing</a>
+      <a href="purchases.html">Purchase History</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <h1>Sales &amp; Billing</h1>
+        <p>Generate customer invoices</p>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="field">
+        <label>Customer Name</label>
+        <input type="text" placeholder="Enter customer name">
+      </div>
+      <div class="field">
+        <label>Date</label>
+        <input type="date" value="date">
+      </div>
+      <div class="field">
+        <label>Payment Method</label>
+        <select>
+          <option>Cash</option>
+          <option>UPI</option>
+          <option>Card</option>
+        </select>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Current Bill Items</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th class="num">Qty</th>
+            <th class="num">Rate (&#8377;)</th>
+            <th class="num">Total (&#8377;)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ORS Sachet</td>
+            <td class="num">2</td>
+            <td class="num">12.00</td>
+            <td class="num">24.00</td>
+          </tr>
+          <tr>
+            <td>Cough Syrup</td>
+            <td class="num">1</td>
+            <td class="num">85.00</td>
+            <td class="num">85.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" class="num">Subtotal:</td>
+            <td class="num">109.00</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="num">Tax (10%):</td>
+            <td class="num">11.50</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="num">Total:</td>
+            <td class="num">&#8377;120.50</td>
+          </tr>
+        </tfoot>
+      </table>
+      <br>
+      <button class="btn">Generate Invoice</button>
+    </div>
+
+    <div class="footer">
+      Pharmacy Management System &copy; 2026 &bull; CSE First-Term Academic Project
+    </div>
+  </div>
+
+</body>
+</html>
